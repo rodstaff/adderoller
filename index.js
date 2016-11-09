@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 //This is an ES6 based ReactJS code
 
@@ -19,7 +19,7 @@ class FriendsList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Name: {this.state.name}</h2>
+        <h2>Name: &nbsp;&nbsp;{this.state.name}</h2>
         <AddFriend addNew={this.addFriend.bind(this)} />
         <ShowList names={this.state.friends} />
       </div>
@@ -64,14 +64,29 @@ AddFriend.propTypes = {
   addNew: React.PropTypes.func.isRequired
 }
 
+// class ShowList extends React.Component {
+//   render() {
+//     var listItems = this.props.names.map((item) => {
+//       return <li key={item}>{item}</li>
+//     })
+//     return (
+//       <div>
+//         <h3>Friends</h3>
+//         <ul>{listItems}</ul>
+//       </div>
+//     );
+//   }
+// }
 class ShowList extends React.Component {
   render() {
-    var listItems = this.props.names.map((item) => 
-      {return <li key={item}>{item}</li>} )
     return (
       <div>
         <h2>Friends</h2>
-        <ul>{listItems}</ul>
+        <ul>
+        {this.props.names.map((item) => {
+          return <li key={item}>{item}</li>
+        }) }
+        </ul>
       </div>
     );
   }
