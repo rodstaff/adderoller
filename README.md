@@ -1,3 +1,3 @@
 # list-adder
 
-This simple app is written in ReactJS.  It adds a new tree to an existing list.  The format is intentionally flat to see the components parent-child flow clearly.
+This simple app is written in ReactJS.  It adds a new entry to an existing list.  The code format is intentionally flat to see the components parent-child flow clearly.  It will be refactored later ...

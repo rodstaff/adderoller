@@ -83,9 +83,9 @@ class ShowList extends React.Component {
       <div>
         <h2>Friends</h2>
         <ul>
-        {this.props.names.map((item) => {
-          return <li key={item}>{item}</li>
-        }) }
+        {this.props.names.map(item => 
+          <li key={item}>{item}</li>
+        )}
         </ul>
       </div>
     );
