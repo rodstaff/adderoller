@@ -35,6 +35,10 @@ FriendsList.defaultProps = {
     'Gottfried von Leibniz ?'
   ]
 }
+FriendsList.propTypes = {
+  name: React.PropTypes.string.isRequired,
+  friends: React.PropTypes.array.isRequired
+}
 
 class AddFriend extends React.Component {
   updateNewFriend(e) {
