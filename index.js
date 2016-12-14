@@ -30,7 +30,7 @@ FriendsList.defaultProps = {
   name: 'Isaac Newton',
   friends: [
     'Renee Descartes',
-    'Edmund Haley',
+    'Edmund Halley',
     'Robert Hooke ?',
     'Gottfried von Leibniz ?'
   ]
