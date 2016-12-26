@@ -33,7 +33,8 @@ FriendsList.defaultProps = {
     'Edmund Halley',
     'Robert Hooke',
     'Gottfried von Leibniz',
-    'Anonymous Friend'
+    'Anonymous Friend',
+    'Big Fan'
   ]
 }
 FriendsList.propTypes = {
