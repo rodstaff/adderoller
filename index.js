@@ -7,7 +7,7 @@ class FriendsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: this.props.name,
+      name: this.props.name[0]+ " " + this.props.name[1],
       friends: this.props.friends
     }
   }
@@ -27,7 +27,7 @@ class FriendsList extends React.Component {
   }
 }
 FriendsList.defaultProps = {
-  name: 'Isaac Newton',
+  name: ['Isaac', 'Newton'],
   friends: [
     'Renee Descartes',
     'Edmund Halley',
