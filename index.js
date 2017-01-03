@@ -7,6 +7,7 @@ class FriendsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      note: this.props.note,
       name: this.props.name[0]+ " " + this.props.name[1],
       friends: this.props.friends
     }
@@ -19,6 +20,7 @@ class FriendsList extends React.Component {
   render() {
     return (
       <div>
+        <h1>{this.state.note}</h1>
         <h2>Name: &nbsp;&nbsp;{this.state.name}</h2>
         <AddFriend addNew={this.addFriend.bind(this)} />
         <ShowList names={this.state.friends} />
@@ -27,6 +29,7 @@ class FriendsList extends React.Component {
   }
 }
 FriendsList.defaultProps = {
+  note: "This is a practice app.",
   name: ['Isaac', 'Newton'],
   friends: [
     'Renee Descartes',
@@ -38,6 +41,7 @@ FriendsList.defaultProps = {
   ]
 }
 FriendsList.propTypes = {
+  note: React.PropTypes.string,
   name: React.PropTypes.string.isRequired,
   friends: React.PropTypes.array.isRequired
 }
