@@ -18,10 +18,16 @@ class FriendsList extends React.Component {
     });
   }
   render() {
+    const myStyle1 = {
+      color: "green"
+    }
+    const myStyle2 = {
+      color: "blue"
+    }
     return (
       <div>
-        <h1>{this.state.note}</h1>
-        <h2>Name: &nbsp;&nbsp;{this.state.name}</h2>
+        <h1 style={myStyle1}>{this.state.note}</h1>
+        <h2 style={myStyle2}>Name: &nbsp;&nbsp;{this.state.name}</h2>
         <AddFriend addNew={this.addFriend.bind(this)} />
         <ShowList names={this.state.friends} />
       </div>
