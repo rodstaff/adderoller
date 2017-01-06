@@ -19,10 +19,12 @@ class FriendsList extends React.Component {
   }
   render() {
     const myStyle1 = {
-      color: "green"
+      color: "green",
+      fontSize: 50
     }
     const myStyle2 = {
-      color: "blue"
+      color: "blue",
+      fontSize: 40
     }
     return (
       <div>
