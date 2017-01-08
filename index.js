@@ -19,11 +19,11 @@ class FriendsList extends React.Component {
   }
   render() {
     const myStyle1 = {
-      color: "green",
+      color: "indigo",
       fontSize: 50
     }
     const myStyle2 = {
-      color: "blue",
+      color: "magenta",
       fontSize: 40
     }
     return (
@@ -50,7 +50,7 @@ FriendsList.defaultProps = {
 }
 FriendsList.propTypes = {
   note: React.PropTypes.string,
-  name: React.PropTypes.string.isRequired,
+  name: React.PropTypes.array.isRequired,
   friends: React.PropTypes.array.isRequired
 }
 
