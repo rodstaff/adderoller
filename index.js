@@ -19,10 +19,10 @@ class FriendsList extends React.Component {
   }
   render() {
     const myStyle1 = {
-      borderStyle:  "dotted",
+      borderStyle:  "solid",
       borderWidth: 5,   //outside <div>
-      marginLeft: 30,
-      marginRight: 20,
+      marginLeft: 150,
+      marginRight: 100,
       marginTop: 50,
       paddingLeft: 20,  //inside <div>
       paddingTop: 5
