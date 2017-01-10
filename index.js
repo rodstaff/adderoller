@@ -46,7 +46,7 @@ class FriendsList extends React.Component {
   }
 }
 FriendsList.defaultProps = {
-  note: "This is a practice app.",
+  note: "Creating an interactive App in ReactJS.",
   name: ['Isaac', 'Newton'],
   friends: [
     'Renee Descartes',
