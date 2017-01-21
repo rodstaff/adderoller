@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import AddFriend from './Components/addfriend.js'
 
 //This is an ES6 based ReactJS code
 
@@ -61,34 +62,6 @@ FriendsList.propTypes = {
   note: React.PropTypes.string,
   name: React.PropTypes.array.isRequired,
   friends: React.PropTypes.array.isRequired
-}
-
-class AddFriend extends React.Component {
-  updateNewFriend(e) {
-    this.setState({
-      newFriend: e.target.value
-    });
-  }
-  handleAddFriend() {
-    this.props.addNew(this.state.newFriend);
-    this.setState({
-      newFriend: ''
-    })
-  }
-  render() {
-    return (
-      <div>
-        <input type="text" onChange={this.updateNewFriend.bind(this)} placeholder="Type new friend here" />
-        <button onClick={this.handleAddFriend.bind(this)}>Add Friend</button>
-      </div>
-    );
-  }
-}
-AddFriend.defaultProps = {
-  newFriend: ''
-}
-AddFriend.propTypes = {
-  addNew: React.PropTypes.func.isRequired
 }
 
 // class ShowList extends React.Component {
