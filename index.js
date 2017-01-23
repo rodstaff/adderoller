@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import FriendsList from './Components/friendslist.js'
+import App from './Components/app.js'
 
 //This is an ES6 based ReactJS code
 
 ReactDOM.render(
-  <FriendsList />, document.getElementById('root')
+  <App />, document.getElementById('root')
 ); 

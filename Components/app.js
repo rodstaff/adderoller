@@ -2,7 +2,7 @@ import React from 'react'
 import AddFriend from './addfriend.js'
 import ShowList from './showlist.js'
 
-export default class FriendsList extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,7 +44,7 @@ export default class FriendsList extends React.Component {
     );
   }
 }
-FriendsList.defaultProps = {
+App.defaultProps = {
   note: "Creating an interactive App in ReactJS.",
   name: ['Isaac', 'Newton'],
   friends: [
@@ -56,7 +56,7 @@ FriendsList.defaultProps = {
     'Big Fan'
   ]
 }
-FriendsList.propTypes = {
+App.propTypes = {
   note: React.PropTypes.string,
   name: React.PropTypes.array.isRequired,
   friends: React.PropTypes.array.isRequired
