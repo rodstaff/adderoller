@@ -1,6 +1,6 @@
 import React from 'react'
-import AddFriend2 from './add-friend2.js'
-import ShowList2 from './show-list2.js'
+import AddFriend from './add-friend.js'
+import ShowList from './show-list.js'
 
 export default class FriendsList2 extends React.Component {
   constructor(props) {
@@ -38,8 +38,8 @@ export default class FriendsList2 extends React.Component {
       <div style={myStyle1}>
         <h1 style={myStyle2}>{this.state.note}</h1>
         <h2 style={myStyle3}>Name: &nbsp;&nbsp;{this.state.name}</h2>
-        <AddFriend2 addNew={this.addFriend.bind(this)} />
-        <ShowList2 names={this.state.friends} />
+        <AddFriend addNew={this.addFriend.bind(this)} />
+        <ShowList names={this.state.friends} />
       </div>
     );
   }
