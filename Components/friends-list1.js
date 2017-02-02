@@ -41,6 +41,7 @@ export default class FriendsList1 extends React.Component {
         <AddFriend addNew={this.addFriend.bind(this)} />
         <AddFriend addNew={this.addFriend.bind(this)} />
         <AddFriend addNew={this.addFriend.bind(this)} />
+        <AddFriend addNew={this.addFriend.bind(this)} />
         <ShowList names={this.state.friends} />
       </div>
     );
