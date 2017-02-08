@@ -1,6 +1,7 @@
 import React from 'react'
 import AddFriend from './add-friend.js'
 import ShowList from './show-list.js'
+import ShowList2 from './show-list2.js'
 
 export default class FriendsList1 extends React.Component {
   constructor(props) {
@@ -9,11 +10,13 @@ export default class FriendsList1 extends React.Component {
       note: this.props.note,
       name: this.props.name[0]+ " " + this.props.name[1],
       friends: this.props.friends,
+      friends2: this.props.friends2
     }
   }
   addFriend(friend) {
     this.setState({
-      friends: this.state.friends.concat([friend])
+      friends: this.state.friends.concat([friend]),
+      friends2: this.state.friends2.concat([friend])
     });
   }
   render() {
@@ -41,7 +44,7 @@ export default class FriendsList1 extends React.Component {
         <AddFriend addNew={this.addFriend.bind(this)} />
         <AddFriend addNew={this.addFriend.bind(this)} />
         <ShowList names={this.state.friends} />
-        <ShowList names={this.state.friends} />
+        <ShowList2 names2={this.state.friends2} />
       </div>
     );
   }
@@ -56,6 +59,14 @@ FriendsList1.defaultProps = {
     'Gottfried von Leibniz',
     'Anonymous Friend',
     'Big Fan'
+  ],
+  friends2: [
+    'Descartes',
+    'Halley',
+    'Hooke',
+    'Leibniz',
+    'Friend',
+    'Fan'
   ]
 }
 FriendsList1.propTypes = {
