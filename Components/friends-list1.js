@@ -1,5 +1,6 @@
 import React from 'react'
 import AddFriend from './add-friend.js'
+import AddList from './add-list.js'
 import ShowList from './show-list.js'
 import ShowList2 from './show-list2.js'
 
@@ -10,13 +11,17 @@ export default class FriendsList1 extends React.Component {
       note: this.props.note,
       name: this.props.name[0]+ " " + this.props.name[1],
       friends: this.props.friends,
-      friends2: this.props.friends2
+      list: this.props.list
     }
   }
   addFriend(friend) {
     this.setState({
-      friends: this.state.friends.concat([friend]),
-      friends2: this.state.friends2.concat([friend])
+      friends: this.state.friends.concat([friend])
+    });
+  }
+  addList(list) {
+    this.setState({
+      list: this.state.list.concat([list])
     });
   }
   render() {
@@ -42,9 +47,9 @@ export default class FriendsList1 extends React.Component {
         <h1 style={myStyle2}>{this.state.note}</h1>
         <h2 style={myStyle3}>Name: &nbsp;&nbsp;{this.state.name}</h2>
         <AddFriend addNew={this.addFriend.bind(this)} />
-        <AddFriend addNew={this.addFriend.bind(this)} />
+        <AddList addNew={this.addList.bind(this)} />
         <ShowList names={this.state.friends} />
-        <ShowList2 names2={this.state.friends2} />
+        <ShowList2 names={this.state.list} />
       </div>
     );
   }
@@ -60,17 +65,20 @@ FriendsList1.defaultProps = {
     'Anonymous Friend',
     'Big Fan'
   ],
-  friends2: [
-    'Descartes',
-    'Halley',
-    'Hooke',
-    'Leibniz',
-    'Friend',
-    'Fan'
+  list: [
+    'Potatoes',
+    'Carrots',
+    'Beans',
+    'Apples',
+    'Milk',
+    'Cheese',
+    'Chips',
+    'Ketchup'
   ]
 }
 FriendsList1.propTypes = {
   note: React.PropTypes.string,
   name: React.PropTypes.array.isRequired,
-  friends: React.PropTypes.array.isRequired
+  friends: React.PropTypes.array.isRequired,
+  list: React.PropTypes.array.isRequired
 }

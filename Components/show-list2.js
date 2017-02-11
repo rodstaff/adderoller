@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default class ShowList extends React.Component {
+export default class ShowList2 extends React.Component {
   render() {
     return (
       <div>
-        <h2>Friends</h2>
+        <h2>List</h2>
         <ul>
-        {this.props.names2.map(item => 
+        {this.props.names.map(item => 
           <li key={item}>{item}</li>
         )}
         </ul>
@@ -14,9 +14,9 @@ export default class ShowList extends React.Component {
     );
   }
 }
-ShowList.defaultProps = {
-  names2: []
+ShowList2.defaultProps = {
+  names: []
 }
-ShowList.propTypes = {
-  names2: React.PropTypes.array.isRequired
+ShowList2.propTypes = {
+  names: React.PropTypes.array.isRequired
 }
