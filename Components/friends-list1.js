@@ -9,7 +9,7 @@ export default class FriendsList1 extends React.Component {
     super(props);
     this.state = {
       note: this.props.note,
-      name: this.props.name[0]+ " " + this.props.name[1],
+      name: this.props.name[0]+ " " + this.props.name[1] + " " + this.props.name[2],
       friends: this.props.friends,
       list: this.props.list
     }
@@ -56,7 +56,7 @@ export default class FriendsList1 extends React.Component {
 }
 FriendsList1.defaultProps = {
   note: "Creating an interactive App in ReactJS.",
-  name: ['Isaac', 'Newton'],
+  name: ['Abraham','Isaac', 'Jacob'],
   friends: [
     'Renee Descartes',
     'Edmund Halley',
