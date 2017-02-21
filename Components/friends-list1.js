@@ -60,10 +60,6 @@ FriendsList1.defaultProps = {
   friends: [
     'Renee Descartes',
     'Edmund Halley',
-    'Robert Hooke',
-    'Gottfried von Leibniz',
-    'Anonymous Friend',
-    'Big Fan'
   ],
   list: [
     'Potatoes',
