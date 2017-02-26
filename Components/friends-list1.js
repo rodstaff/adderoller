@@ -70,7 +70,8 @@ FriendsList1.defaultProps = {
     'Cheese',
     'Chips',
     'Ketchup',
-    'Coconuts'
+    'Coconuts',
+    'Papaya'
   ]
 }
 FriendsList1.propTypes = {
