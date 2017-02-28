@@ -60,6 +60,7 @@ FriendsList1.defaultProps = {
   friends: [
     'Renee Descartes',
     'Edmund Halley',
+    'The Young and the Restless'
   ],
   list: [
     'Potatoes',
