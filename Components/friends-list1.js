@@ -65,12 +65,7 @@ FriendsList1.defaultProps = {
   list: [
     'Potatoes',
     'Carrots',
-    'Beans',
-    'Apples',
-    'Milk',
-    'Cheese',
-    'Chips',
-    'Ketchup'
+    'Beans'
   ]
 }
 FriendsList1.propTypes = {
