@@ -52,9 +52,7 @@ FriendsList2.defaultProps = {
     'Superman',
     'Wonderwoman',
     'Leonardo',
-    'MichaelAngelo',
-    'Raphael',
-    'Donatello'
+    'MichaelAngelo'
   ]
 }
 FriendsList2.propTypes = {
